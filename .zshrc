@@ -3,7 +3,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 export PATH="/Users/jikama/bin:/usr/local/bin:/usr/local/sbin:/usr/local/opt/php@7.4/bin:/usr/local/opt/php@7.4/sbin:$PATH"
-export ZSH="/Users/jikama/.config/.oh-my-zsh"
+export ZSH="/Users/jikama/.oh-my-zsh"
 
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
@@ -33,7 +33,6 @@ plugins=(
  )
 
 source $ZSH/oh-my-zsh.sh
-source "/Users/jikama/.config/mysql.plugin.zsh"
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 autoload -U compinit && compinit
@@ -54,4 +53,4 @@ alias mjk='majika'
 alias sshm='ssh majika'
 
 hosts=(`hostname` server.majika.jp majika.jp)
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+[[ ! -f ~/.oh-my-zsh/.p10k.zsh ]] || source ~/.oh-my-zsh/.p10k.zsh

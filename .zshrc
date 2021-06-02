@@ -20,6 +20,7 @@ plugins=(
  iterm2
  laravel
  history-substring-search
+ mysql
  node
  npm
  osx

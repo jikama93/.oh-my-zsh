@@ -1,10 +1,12 @@
-######## INSTALL LSPHP74 ######
-sudo ufw allow 7080
+cd /root
+sudo wget https://raw.githubusercontent.com/jikama93/.oh-my-zsh/main/openlitespeed-vultr/.bashrc-vultr
+sudo mv /root/.bashrc /root/bashrc.bkp
+sudo mv /root/.bashrc-vultr /root/.bashrc
 sudo apt update -y 
 sudo apt purge lsphp8* -y
 sudo apt-get install lsphp74 lsphp74-common lsphp74-curl lsphp74-imagick lsphp74-imap lsphp74-json lsphp74-memcached lsphp74-mysql lsphp74-opcache lsphp74-redis lsphp74-tidy lsphp74-pear lsphp74-modules-source lsphp74-ioncube lsphp74-memcached lsphp74-ioncube lsphp74-intl lsphp74-apcu -y
-echo 'PATH=/usr/local/lsws/lsphp74/bin:$PATH' >> ~/.bashrc && source ~/.bashrc
-nano 
+sudo ufw allow 7080
+source /root/.bashrc
 
 ######### WP-CLI INSTALL #####
 cd /opt
